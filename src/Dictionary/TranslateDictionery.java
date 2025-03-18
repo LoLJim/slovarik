@@ -1,7 +1,9 @@
+package Dictionary;
+
 import java.io.*;
 import java.util.HashMap;
 
-public abstract class TranslateDictionary implements IDictionary {
+abstract class TranslateDictionary implements iDictionary{
     HashMap<String, String> dictKeyWord = new HashMap<>();; // словарь
     static File file = new File("dictionaryBase.txt");
     String patternForKey = "";    // рег. выражение для слов языка
