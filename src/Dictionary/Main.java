@@ -1,10 +1,12 @@
+package Dictionary;
+
 import java.util.Scanner;
 
 public class Main {
 
     public static void main(String[] args) {
-        MyDictionary4lettersLanguage m4lDict = new MyDictionary4lettersLanguage(); //Создание словаря, предназначенного для работы со словами длиной 4 символами, состоящими только из букв латинского алфавита
-        MyDictionary5numLanguage m5nDict = new MyDictionary5numLanguage(); //Создание словаря, предназначенного для работы со словами длиной 5 символов, состоящими только из цифр
+        Dictionary4lettersLanguage m4lDict = new Dictionary4lettersLanguage(); //Создание словаря, предназначенного для работы со словами длиной 4 символами, состоящими только из букв латинского алфавита
+        Dictionary5numLanguage m5nDict = new Dictionary5numLanguage(); //Создание словаря, предназначенного для работы со словами длиной 5 символов, состоящими только из цифр
         TranslateDictionary supportDict = m5nDict; //Текущий словарь
         TranslateDictionary usingDict = m4lDict; //Вспомогательный словарь
         String actionNum = ""; //Хранение номера выбранного действия
